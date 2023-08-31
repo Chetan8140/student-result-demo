@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table</title>
+</head>
+<body>
+  <form action="/add" method="post" style="margin: 20px;">
+    <label for="">Name : </label><input type="text" name="Name"><br><br>
+    <label for="">Maths : </label><input type="text" name="Maths"><br><br>
+    <label for="">Science : </label><input type="text" name="Science"><br><br>
+    <label for="">English : </label><input type="text" name="English"><br><br>
+    <label for="">Hindi : </label><input type="text" name="Hindi"><br><br>
+    <label for="">Gujrati : </label><input type="text" name="Gujrati"><br><br>
+    <button style="margin-left: 50px; padding: 10px 20px;">Submit</button>
+  </form>
+
+  <table style="background-image: radial-gradient(circle, rgba(34,193,195,1) 26%, rgba(253,187,45,1) 100%);" bgcolor="black"  align="center" border="2" bordercolor="black">
+        
+    <tr align="center" border="1">
+        <th width="100px" >Roll no</th>
+        <th width="100px">Name</th>
+        <th width="100px">Maths</th>
+        <th width="100px">Science</th>
+        <th width="100px">English</th>
+        <th width="100px">Hindi</th>
+        <th width="100px">Gujrati</th>
+        <!-- <th width="100px">Total</th>
+        <th width="100px">Per</th> -->
+        <th width="100px">Detail</th>
+        
+    </tr> 
+
+    <% for(let i=0; i< data.length ; i++) {%>
+        <%let total = data[i].Maths + data[i].Science + data[i].English + data[i].Hindi + data[i].Gujrati %>
+        <%let per = total/5 %>
+
+    <tr align="center">
+        <td><%= i+1 %></td>
+        <td><%= data[i].Name %></td>
+        <td><%= data[i].Maths %></td>
+        <td><%= data[i].Science %></td>
+        <td><%= data[i].English %></td>
+        <td><%= data[i].Hindi %></td>
+        <td><%= data[i].Gujrati %></td>
+        <!-- <td><%= total %></td>
+        <td><%= per %></td> -->
+        <td><a href="/detail?no=<%= i %>">detail</a></td>
+        <td><a href="/?editid=<%= i %>">edit</a></td>
+
+    </tr>
+<% } %>
+        </table>
+</body>
+</html>

@@ -1,0 +1,58 @@
+[
+    {
+        "Name": "Chetan",
+        "Maths": 78,
+        "Science": 58,
+        "English": 96,
+        "Hindi": 85,
+        "Gujrati": 63
+    },
+    {
+        "Name": "Yash",
+        "Maths": 85,
+        "Science": 95,
+        "English": 75,
+        "Hindi": 65,
+        "Gujrati": 45
+    },
+    {
+        "Name": "Deep",
+        "Maths": 78,
+        "Science": 65,
+        "English": 96,
+        "Hindi": 63,
+        "Gujrati": 99
+    },
+    {
+        "Name": "Aryan",
+        "Maths": 95,
+        "Science": 74,
+        "English": 85,
+        "Hindi": 63,
+        "Gujrati": 45
+    },
+    {
+        "Name": "Dhruv",
+        "Maths": 65,
+        "Science": 48,
+        "English": 98,
+        "Hindi": 75,
+        "Gujrati": 85
+    },
+    {
+        "Name": "kajal",
+        "Maths": "89",
+        "Science": "65",
+        "English": "36",
+        "Hindi": "47",
+        "Gujrati": "65"
+    },
+    {
+        "Name": "jigar",
+        "Maths": "89",
+        "Science": "58",
+        "English": "74",
+        "Hindi": "65",
+        "Gujrati": "85"
+    }
+]
